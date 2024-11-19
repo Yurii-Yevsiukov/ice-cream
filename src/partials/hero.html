@@ -1,50 +1,49 @@
 <section class="section hero">
   <div class="container">
-    <h1 class="">ice cream made with passion</h1>
-    <ul class="">
-      <li class="">
-        <a href="">Products</a>
+    <h1 class="hero__title">ice cream made with passion</h1>
+    <ul class="hero__btn-list">
+      <li class="hero__btn-item">
+        <a class="hero__btn-link" href="#products">Products</a>
       </li>
-      <li class="">
-        <a href="">How it&#39;s made?</a>
+      <li class="hero__btn-item">
+        <a class="hero__btn-link" href="#">How it&#39;s made?</a>
       </li>
     </ul>
-    <div class="">
-      <picture class="">
+
+    <div class="hero__wrap-plate">
+      <picture class="hero__plate">
         <source
           srcset="
-            ./images/hero/lots-desk225.png    1x,
-            ./images/hero/lots-desk225@2x.png 2x
+            ./images/hero/plate-desk225.png    1x,
+            ./images/hero/plate-desk225@2x.png 2x
           "
           media="(min-width: 1200px)"
         />
-
         <source
           srcset="
-            ./images/hero/lots-tab152.png    1x,
-            ./images/hero/lots-tab152@2x.png 2x
+            ./images/hero/plate-tab152.png    1x,
+            ./images/hero/plate-tab152@2x.png 2x
           "
           media="(min-width: 768px)"
         />
         <img
-          src="./images/hero/lots-tab152.png"
+          src="./images/hero/plate-tab152.png"
           alt="lots of ice-cream"
           loading="lazy"
         />
       </picture>
-    </div>
-    <div class="">
-      <p>
-        Indulge in a scoop of ice cream made with passion and treat your taste
-        buds to an unforgettable experience!
-      </p>
-      <a href="">
-        <svg class="" width="40" height="16">
+      <div class="hero__wrap-info">
+        <p class="hero__info">
+          Indulge in a scoop of ice cream made with passion and treat your taste
+          buds to an unforgettable experience!
+        </p>
+        <svg class="icon-arrow" width="40" height="16">
           <use href="./images/svg/sprite.svg#icon-arrow4"></use>
         </svg>
-      </a>
+      </div>
     </div>
-    <div class="right">
+
+    <div class="hero__ice-cream">
       <picture>
         <source
           srcset="
@@ -72,18 +71,17 @@
           loading="lazy"
         />
       </picture>
-      <div>
-        <ul>
-          <li>
-            <p>16</p>
-            <p>cafes</p>
-          </li>
-          <li>
-            <p>23</p>
-            <p>food trucks</p>
-          </li>
-        </ul>
-      </div>
     </div>
+
+    <ul class="venue__list">
+      <li class="venue__item">
+        <p class="venue__item-number">16</p>
+        <p class="venue__item-text">cafes</p>
+      </li>
+      <li class="venue__item">
+        <p class="venue__item-number">23</p>
+        <p class="venue__item-text">food trucks</p>
+      </li>
+    </ul>
   </div>
 </section>
