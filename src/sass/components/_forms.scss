@@ -1,0 +1,53 @@
+/**
+  |============================
+  | Загальні стилі форм контактів
+  |============================
+*/
+.contacts-form {
+  width: 100%;
+  text-align: center;
+
+  @include tablet {
+    width: 368px;
+    margin: 0 auto;
+  }
+}
+
+.contacts-form__label:not(:last-child) {
+  margin-bottom: 12px;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.contacts-form__label:nth-last-child(2) {
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts-form__input,
+.contacts-form__textarea {
+  width: 100%;
+  padding: 8px 12px;
+  @include fonts(12px, 400, 1.4, 0em);
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid $backgroundColorBody;
+  border-radius: 10px;
+
+  @include tablet {
+    padding: 11px 16px;
+    @include fonts(14px, 400, 1.4, 0em);
+  }
+
+  &:focus {
+    outline: 1px solid #7fff00;
+  }
+}
+
+.contacts-form__textarea {
+  resize: none;
+}

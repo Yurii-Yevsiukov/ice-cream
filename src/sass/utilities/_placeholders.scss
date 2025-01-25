@@ -1,0 +1,46 @@
+// %textLabel {
+//   margin-bottom: 12px;
+//   font-family: $primaryFontFamily;
+//   font-size: 30px;
+//   font-weight: 800;
+//   line-height: 1.23;
+//   letter-spacing: 0.04em;
+//   color: $secondaryTextColor;
+//   text-align: center;
+//   text-transform: uppercase;
+// }
+
+// %titleStyle {
+//   margin-bottom: 82px;
+//   font-family: $secondaryFontFamily;
+//   font-size: 36px;
+//   font-weight: 400;
+//   line-height: 1.25;
+//   letter-spacing: 0.06em;
+//   color: $secondaryTextColor;
+//   text-align: center;
+//   text-transform: uppercase;
+// }
+
+%btn {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
+
+  font-family: $primaryFontFamily;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: 0;
+  color: #000000;
+
+  background-color: $bgColorButton;
+  border: none;
+  border-radius: 10px;
+
+  transition: color $transitionDuration $transitionTimingFunction,
+    background-color $transitionDuration $transitionTimingFunction,
+    border $transitionDuration $transitionTimingFunction;
+}

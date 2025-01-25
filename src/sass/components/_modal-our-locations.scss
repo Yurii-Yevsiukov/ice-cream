@@ -1,0 +1,17 @@
+/**
+  |============================
+  | Модальне вікно our-locations
+  |============================
+*/
+.modal__map {
+  width: 224px;
+  height: 199px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+
+  @include tablet {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+}

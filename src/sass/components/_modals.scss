@@ -1,0 +1,83 @@
+/**
+  |============================
+  | Загальні стилі modal вікон
+  |============================
+*/
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  padding: 26px 18px;
+  font-family: $primaryFontFamily;
+  color: $secondaryTextColor;
+  background-color: $backgroundColorModal;
+  border: 2px solid $bgColorButton;
+  border-radius: 10px;
+
+  @include tablet {
+    width: 568px;
+    padding: 30px;
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  @include centerFlex;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  @include transition(all);
+
+  @include tablet {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #dddddd;
+  }
+
+  &:hover .modal__cross-icon,
+  &:focus .modal__cross-icon {
+    fill: #ff0000;
+  }
+}
+
+.modal__cross-icon {
+  width: 12px;
+  height: 12px;
+
+  @include tablet {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.modal__title {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: $secondaryFontFamily;
+  @include fonts(16px, 400, 1.5, 0em);
+  color: $secondaryTextColor;
+  text-align: center;
+
+  @include tablet {
+    width: 322px;
+    margin-bottom: 32px;
+    @include fonts(20px, 400, 1.4, 0em);
+  }
+}
+
+.modal__text {
+  @include fonts(14px, 400, 1.4, 0em);
+
+  @include tablet {
+    @include fonts(16px, 400, 1.4, 0em);
+  }
+}

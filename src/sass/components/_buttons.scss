@@ -1,0 +1,134 @@
+/**
+  |============================
+  | Стилі для кнопок
+  |============================
+*/
+.about__btn-readmore,
+.modal__form-btn,
+.modal__map-link {
+  @extend %btn;
+
+  &:hover {
+    background-color: $bgHoverButton;
+  }
+
+  &:focus {
+    color: $primaryTextColor;
+    background-color: $bgHoverButton;
+  }
+
+  &:disabled {
+    background-color: $bgDisabledButton;
+  }
+}
+
+.header__btn-buynow {
+  @extend %btn;
+  padding-left: 36px;
+  padding-right: 36px;
+
+  &:hover {
+    background-color: $bgHoverButton;
+  }
+
+  &:focus {
+    color: $primaryTextColor;
+    background-color: $bgHoverButton;
+  }
+
+  &:disabled {
+    background-color: $bgDisabledButton;
+  }
+}
+
+.hero__btn-link {
+  @extend %btn;
+  padding-left: 22px;
+  padding-right: 21px;
+  color: $accentColorText;
+  text-decoration-line: underline;
+  background-color: transparent;
+  border-color: transparent;
+
+  &:hover {
+    color: $bgHoverButton;
+  }
+
+  &:focus {
+    color: $primaryTextColor;
+  }
+
+  &:disabled {
+    color: $bgDisabledButton;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 9px 0px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0;
+  }
+}
+
+.hero__btn-products,
+.contacts__btn-franchise {
+  @extend %btn;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid $bgColorButton;
+
+  &:hover {
+    border-color: $bgHoverButton;
+  }
+
+  &:focus {
+    color: $primaryTextColor;
+    border-color: $bgHoverButton;
+  }
+
+  &:disabled {
+    border-color: $bgDisabledButton;
+  }
+}
+
+.hero__btn-products {
+
+  @media screen and (max-width: 1199px) {
+    padding: 9px 24px;
+    border: 2px solid $bgColorButton;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0;
+  }
+}
+
+.contacts__btn-franchise {
+  padding-left: 53px;
+  padding-right: 53px;
+}
+
+.contacts__btn-locations {
+  @extend %btn;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &:hover {
+    background-color: $bgHoverButton;
+  }
+
+  &:focus {
+    color: $primaryTextColor;
+    background-color: $bgHoverButton;
+  }
+
+  &:disabled {
+    background-color: $bgDisabledButton;
+  }
+}

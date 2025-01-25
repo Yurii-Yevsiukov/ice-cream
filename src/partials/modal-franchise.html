@@ -1,6 +1,6 @@
 <div class="modal modal-franchise" data-modal="5">
-  <button class="modal__close" type="button">
-    <svg class="modal__cross" width="24" height="24">
+  <button class="modal__close-btn js-modal-close" type="button">
+    <svg class="modal__cross-icon js-modal-close">
       <use href="./images/svg/sprite.svg#icon-close-modal"></use>
     </svg>
   </button>
@@ -8,7 +8,7 @@
   <h2 class="modal__title">
     Thank you for your interest in owning an Ice Cream shop
   </h2>
-  <p class="modal__text">
+  <p class="modal__text modal__text--franchise">
     Due to the overwhelming volume of franchise requests we are not accepting
     new franchisee applications at this time. Once the application process
     resumes, we will contact you for further information. Please fill out the
@@ -18,57 +18,24 @@
 
   <form class="contacts-form" name="contacts-form" action="">
     <label class="contacts-form__label" for="name">
-      <input
-        class="contacts-form__input"
-        id="name"
-        name="name"
-        type="text"
-        minlength="2"
-        maxlength="30"
-        placeholder="Name"
-        pattern="[A-Za-z]{1-30}"
-        required
-      />
+      <input class="contacts-form__input" id="name" name="name" type="text" minlength="2" maxlength="30"
+        placeholder="Name" pattern="[A-Za-z]{1-30}" required />
     </label>
 
     <label class="contacts-form__label" for="tel">
-      <input
-        class="contacts-form__input"
-        id="tel"
-        name="tel"
-        type="tel"
-        minlength="5"
-        maxlength="15"
-        placeholder="Phone"
-        pattern="[0-9]{5,10}"
-        required
-      />
+      <input class="contacts-form__input" id="tel" name="tel" type="tel" minlength="5" maxlength="15"
+        placeholder="Phone" pattern="[0-9]{5,10}" required />
     </label>
 
     <label class="contacts-form__label" for="email">
-      <input
-        class="contacts-form__input"
-        id="email"
-        name="email"
-        type="email"
-        minlength="5"
-        maxlength="20"
-        placeholder="Email"
-        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-        required
-      />
+      <input class="contacts-form__input" id="email" name="email" type="email" minlength="5" maxlength="20"
+        placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required />
     </label>
 
     <label class="contacts-form__label" for="comment">
-      <textarea
-        class="contacts-form__textarea"
-        id="comment"
-        name="comment"
-        placeholder="Comment"
-        rows="4"
-      ></textarea>
+      <textarea class="contacts-form__textarea" id="comment" name="comment" placeholder="Comment" rows="3"></textarea>
     </label>
-    <button class="form-button" type="submit">Submit</button>
+    <button class="modal__form-btn" type="submit">Submit</button>
   </form>
 </div>
 

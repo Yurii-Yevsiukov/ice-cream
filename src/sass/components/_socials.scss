@@ -1,0 +1,33 @@
+/**
+  |============================
+  | Посилання на соц. мережі
+  |============================
+*/
+.socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.socials-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.socials-list__link {
+  @include centerFlex;
+  width: 34px;
+  height: 34px;
+  background-color: $bgColorButton;
+  color: $fillDefaultIcon;
+  border-radius: 50%;
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $fillHoverIcon;
+  }
+}
+
+.socials-list__icon {
+  fill: currentColor;
+}

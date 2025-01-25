@@ -1,0 +1,42 @@
+/**
+  |============================
+  | Кнопка Вгору
+  |============================
+*/
+
+// чорновик
+.up {
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  z-index: 10;
+
+  @include tablet {
+    right: 30px;
+    bottom: 60px;
+  }
+
+  button {
+    width: 48px;
+    height: 48px;
+    @include centerFlex;
+    background-color: inherit;
+    border: none;
+
+    @include tablet {
+      width: 64px;
+      height: 64px;
+    }
+
+    svg {
+      fill: #000000;
+      opacity: 0.4;
+      @include transition(opacity);
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+}

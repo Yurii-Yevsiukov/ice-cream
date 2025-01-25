@@ -1,0 +1,121 @@
+/**
+  |============================
+  | Header section
+  |============================
+*/
+.header {
+  margin: 0 auto;
+  padding-top: 12px;
+  max-width: 480px;
+
+  @include mobile {
+    padding-top: 14px;
+  }
+
+  @include tablet {
+    padding-top: 20px;
+    max-width: 768px;
+  }
+
+  @include desktop {
+    padding-top: 8px;
+    max-width: 1200px;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  @include tablet {
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  width: 40px;
+  height: 37px;
+
+  @include mobile {
+    width: 48px;
+    height: 44px;
+  }
+
+  @include tablet {
+    width: 48px;
+    height: 44px;
+  }
+
+  @include desktop {
+    width: 60px;
+    height: 65px;
+  }
+}
+
+.main-nav {
+  padding-top: 32px;
+  padding-bottom: 13px;
+}
+
+.main-nav__list {
+  display: none;
+
+  @include desktop {
+    @include centerFlex;
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.main-nav__link {
+  display: block;
+  @include fonts(16px, 700, 1.25, 0em);
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accentColorText;
+  }
+}
+
+.header__wrap-buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.burger-menu__btn {
+  @include centerFlex;
+  background-color: transparent;
+  border: none;
+
+  &:hover .burger-menu__icon,
+  &:focus .burger-menu__icon {
+    fill: #000000;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.burger-menu__icon {
+  fill: #ffffff;
+  @include transition(fill);
+}
+
+.header__btn-buynow {
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+
+//.icon-arrow-right {}

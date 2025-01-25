@@ -1,0 +1,35 @@
+/* Плавниий скролінг до секції */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primaryFontFamily;
+  @include fonts(12px, 400, 1.76, 0.02em);
+  color: $primaryTextColor;
+  background-color: $backgroundColorBody;
+
+  @include desktop {
+    @include fonts(16px, 400, 1.76, 0.02em);
+  }
+
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    padding: 0 16px;
+  }
+}

@@ -1,87 +1,71 @@
 <section class="section hero">
-  <div class="container">
-    <h1 class="hero__title">ice cream made with passion</h1>
-    <ul class="hero__btn-list">
-      <li class="hero__btn-item">
-        <a class="hero__btn-link" href="#products">Products</a>
-      </li>
-      <li class="hero__btn-item">
-        <a class="hero__btn-link" href="#">How it&#39;s made?</a>
-      </li>
-    </ul>
+  <div class="container hero__container">
+    <div class="hero__left-block">
+      <h1 class="hero__title">ice cream made with <span class="hero__title-passion">passion</span></h1>
+      <ul class="list hero__btn-list">
+        <li class="hero__btn-item">
+          <a class="link hero__btn-products" href="#products">Products</a>
+        </li>
+        <li class="hero__btn-item">
+          <a class="link hero__btn-link" href="#about">How it&#39;s made?</a>
+        </li>
+      </ul>
 
-    <div class="hero__wrap-plate">
-      <picture class="hero__plate">
-        <source
-          srcset="
-            ./images/hero/plate-desk225.png    1x,
-            ./images/hero/plate-desk225@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero/plate-tab152.png    1x,
-            ./images/hero/plate-tab152@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <img
-          src="./images/hero/plate-tab152.png"
-          alt="lots of ice-cream"
-          loading="lazy"
-        />
-      </picture>
-      <div class="hero__wrap-info">
-        <p class="hero__info">
-          Indulge in a scoop of ice cream made with passion and treat your taste
-          buds to an unforgettable experience!
-        </p>
-        <svg class="icon-arrow" width="40" height="16">
-          <use href="./images/svg/sprite.svg#icon-arrow4"></use>
-        </svg>
+      <div class="hero__wrap-plate">
+        <picture class="hero__plate">
+          <source srcset="
+              ./images/hero/plate-desk225.png    1x,
+              ./images/hero/plate-desk225@2x.png 2x
+            " media="(min-width: 1200px)" />
+          <source srcset="
+              ./images/hero/plate-tab152.png    1x,
+              ./images/hero/plate-tab152@2x.png 2x
+            " media="(min-width: 768px)" />
+          <img src="./images/hero/plate-tab152.png" alt="lots of ice-cream" loading="lazy" />
+        </picture>
+        <div class="hero__wrap-info">
+          <p class="hero__info">
+            Indulge in a scoop of ice cream made with passion and treat your taste
+            buds to an unforgettable experience!
+          </p>
+          <a class="link hero__btn-reviews" href="#reviews">
+            <svg class="icon-arrow" width="40" height="16">
+              <use href="./images/svg/sprite.svg#icon-arrow4"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="hero__ice-cream">
-      <picture>
-        <source
-          srcset="
-            ./images/hero/ice-cream-desk456.png    1x,
-            ./images/hero/ice-cream-desk456@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/hero/ice-cream-tab268.png    1x,
-            ./images/hero/ice-cream-tab268@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/hero/ice-cream-480-218.png    1x,
-            ./images/hero/ice-cream-480-218@2x.png 2x
-          "
-        />
-        <img
-          src="./images/hero/ice-cream-480-218.png"
-          alt="ice cream cone"
-          loading="lazy"
-        />
-      </picture>
-    </div>
+    <div class="hero__right-block">
+      <div class="hero__ice-cream">
+        <picture>
+          <source srcset="
+              ./images/hero/ice-cream-desk456.png    1x,
+              ./images/hero/ice-cream-desk456@2x.png 2x
+            " media="(min-width: 1200px)" />
+          <source srcset="
+              ./images/hero/ice-cream-tab268.png    1x,
+              ./images/hero/ice-cream-tab268@2x.png 2x
+            " media="(min-width: 768px)" />
+          <source srcset="
+              ./images/hero/ice-cream-480-218.png    1x,
+              ./images/hero/ice-cream-480-218@2x.png 2x
+            " media="(min-width: 480px)" />
+          <img src="./images/hero/ice-cream-mob177.png" alt="ice cream cone" loading="lazy" />
+        </picture>
+      </div>
 
-    <ul class="venue__list">
-      <li class="venue__item">
-        <p class="venue__item-number">16</p>
-        <p class="venue__item-text">cafes</p>
-      </li>
-      <li class="venue__item">
-        <p class="venue__item-number">23</p>
-        <p class="venue__item-text">food trucks</p>
-      </li>
-    </ul>
+      <ul class="list venue__list">
+        <li class="venue__item">
+          <p class="venue__item-number">16</p>
+          <p class="venue__item-text">cafes</p>
+        </li>
+        <li class="venue__item">
+          <p class="venue__item-number">23</p>
+          <p class="venue__item-text">food trucks</p>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>

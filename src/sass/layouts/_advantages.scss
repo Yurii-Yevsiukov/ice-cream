@@ -1,0 +1,116 @@
+/**
+  |============================
+  | Advantages section
+  |============================
+*/
+.advantages {
+  padding-top: 0;
+  padding-bottom: 32px;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-bottom: 80px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  @include mobile {
+    gap: 32px;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0px;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    width: 152px;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+    background-position: center;
+    background-color: $bgColorButton;
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
+
+    @include desktop {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.advantages__item-cow::before {
+  background-image: url(../images/advantages/cow-icon36.png);
+}
+
+.advantages__item-weight::before {
+  background-image: url(../images/advantages/weight-icon36.png);
+}
+
+.advantages__item-cream::before {
+  background-image: url(../images/advantages/ice-cream-icon36.png);
+}
+
+.advantages__number {
+  margin-bottom: 16px;
+  @include fonts(36px, 700, 1.22, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin-bottom: 12px;
+    @include fonts(48px, 700, 1.22, 0.04em);
+  }
+
+  @include desktop {
+    @include fonts(58px, 700, 1.22, 0.04em);
+  }
+}
+
+.advantages__text {
+  width: 230px;
+  @include fonts(12px, 400, 1.7, 0em);
+  text-align: center;
+
+  @include tablet {
+    width: 100%;
+    @include fonts(14px, 400, 1.74, 0em);
+  }
+
+  @include desktop {
+    @include fonts(16px, 400, 1.76, 0.02em);
+  }
+}

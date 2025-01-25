@@ -1,0 +1,78 @@
+/**
+  |============================
+  | Reviews section
+  |============================
+*/
+.reviews {
+  padding-top: 174px;
+  padding-bottom: 413px;
+  background-size: cover;
+  background-color: $backgroundColorModal;
+  background-image: url(../images/background/bg-mob885.png);
+
+  @include mobile {
+    padding-top: 235px;
+    padding-bottom: 409px;
+  }
+
+  @include tablet {
+    padding-top: 283px;
+    padding-bottom: 379px;
+    background-image: url(../images/background/bg-tab963.png);
+  }
+
+  @include desktop {
+    padding-top: 464px;
+    padding-bottom: 228px;
+    background-image: url(../images/background/bg-desk1300.png);
+  }
+}
+
+// .reviews__item {}
+
+.reviews__img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.reviews__text {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding: 35px 39px;
+  @include fonts(12px, 400, 2.55, 0em);
+  text-align: center;
+  background-color: $backgroundColorBody;
+  border-radius: 10px;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 28px 80px;
+    @include fonts(14px, 500, 1.86, 0.04em);
+    border-radius: 24px;
+  }
+
+  @include desktop {
+    width: 968px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    padding: 43px 109px;
+    @include fonts(16px, 500, 1.86, 0.04em);
+  }
+}
+
+.reviews__author {
+  margin-bottom: 12px;
+  @include fonts(20px, 500, 1.86, 0em);
+  color: $secondaryTextColor;
+  text-align: center;
+
+  @include tablet {
+    margin-bottom: 32px;
+    @include fonts(16px, 500, 1.86, 0em);
+  }
+}

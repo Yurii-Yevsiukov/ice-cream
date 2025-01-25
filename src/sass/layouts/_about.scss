@@ -1,0 +1,182 @@
+/**
+  |============================
+  | About section
+  |============================
+*/
+.about {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
+
+  @include tablet {
+    padding-bottom: 86px;
+  }
+
+  @include desktop {
+    padding-bottom: 99px;
+  }
+}
+
+.about__label {
+  margin-bottom: 12px;
+  @include fonts(18px, 700, 1.22, 0em);
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    @include fonts(22px, 800, 1.23, 0em);
+  }
+
+  @include desktop {
+    @include fonts(30px, 800, 1.23, 0.04em);
+  }
+}
+
+.about__title {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-family: $secondaryFontFamily;
+  @include fonts(30px, 400, 1.27, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 72px;
+    @include fonts(34px, 400, 1.26, 0.04em);
+  }
+
+  @include desktop {
+    margin-bottom: 82px;
+    @include fonts(36px, 400, 1.25, 0.06em);
+  }
+}
+
+.about__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.about__wrap-picture {
+  width: 279px;
+  height: 279px;
+  margin-bottom: 62px;
+  background-color: rgba(248, 210, 78, 0.7);
+  border-radius: 50%;
+  box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+
+  @include tablet {
+    width: 330px;
+    height: 330px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 490px;
+    height: 490px;
+  }
+}
+
+.about__picture {
+  display: block;
+  transform: translateY(22px);
+
+  @include tablet {
+    transform: translateY(26px);
+  }
+
+  @include desktop {
+    transform: translateY(39px);
+  }
+}
+
+.about__wrap-text {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+
+  @include tablet {
+    width: 336px;
+  }
+
+  @include desktop {
+    width: 463px;
+    margin-right: 105px;
+  }
+}
+
+.about__box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @include tablet {
+    gap: 8px;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  @include desktop {
+    margin-bottom: 54px;
+  }
+}
+
+.about__text-first {
+  @include fonts(12px, 400, 1.76, 0.04em);
+
+  @include tablet {
+    @include fonts(12px, 400, 1.76, 0.04em);
+  }
+
+  @include desktop {
+    @include fonts(16px, 400, 1.76, 0.04em);
+  }
+}
+
+.about__text-second {
+  @include fonts(12px, 400, 1.62, 0em);
+  text-align: center;
+
+  @include tablet {
+    @include fonts(12px, 400, 1.76, 0.04em);
+    text-align: left;
+  }
+
+  @include desktop {
+    @include fonts(14px, 400, 1.94, 0.04em);
+  }
+}
+
+.about__text-third {
+  @include fonts(12px, 400, 1.62, 0em);
+  text-align: center;
+
+  @include tablet {
+    @include fonts(12px, 400, 1.94, 0.04em);
+    text-align: left;
+  }
+
+  @include desktop {
+    @include fonts(14px, 400, 1.94, 0.04em);
+  }
+}
+
+.about__btn-readmore {
+  margin: 0 auto;
+
+  @include tablet {
+    margin-left: 0;
+  }
+}

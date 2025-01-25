@@ -1,117 +1,53 @@
 <header class="header">
-  <div class="container">
+  <div class="container header__container">
     <a class="logo" href="#">
       <picture>
-        <source
-          srcset="
+        <source srcset="
             ./images/header/logo-desk60.png    1x,
             ./images/header/logo-desk60@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
+          " media="(min-width: 1200px)" />
+        <source srcset="
             ./images/header/logo-tab-480-48.png    1x,
             ./images/header/logo-tab-480-48@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
+          " media="(min-width: 480px)" />
+        <source srcset="
             ./images/header/logo-mob40.png    1x,
             ./images/header/logo-mob40@2x.png 2x
-          "
-        />
+          " />
         <img src="./images/header/logo-mob40.png" alt="logo" />
       </picture>
     </a>
 
     <nav class="main-nav">
-      <ul class="main-nav__list">
+      <menu class="list main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Home</a>
+          <a class="link main-nav__link" href="#">Home</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">How it&#39;s made?</a>
+          <a class="link main-nav__link" href="#about">How it&#39;s made?</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Our products</a>
+          <a class="link main-nav__link" href="#products">Our products</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Contact</a>
+          <a class="link main-nav__link" href="#contacts">Contact</a>
         </li>
-      </ul>
+      </menu>
     </nav>
 
-    <div class="header__buttons">
-      <button class="button" type="button" data-menu-open>
-        <svg class="icon-burger-menu" width="32" height="32">
+    <div class="header__wrap-buttons">
+      <button class="button burger-menu__btn" type="button" data-menu-open aria-expanded="false"
+        aria-controls="mobile-menu">
+        <svg class="burger-menu__icon" width="32" height="32">
           <use href="./images/svg/sprite.svg#icon-burger-menu"></use>
         </svg>
       </button>
-      <button class="button" type="button" data-modal="1">
+      <button class="button header__btn-buynow js-open-modal" type="button" data-modal="1">
         Buy now
         <svg class="icon-arrow-right" width="12" height="12">
           <use href="./images/svg/sprite.svg#icon-arrow-right-bold"></use>
         </svg>
       </button>
     </div>
-  </div>
-
-  <!-- Mobile menu -->
-  <div class="mobile-menu data-menu">
-    <a class="logo mobile-menu__logo" href="#">
-      <picture>
-        <source
-          srcset="
-            ./images/header/logo-desk60.png    1x,
-            ./images/header/logo-desk60@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/header/logo-tab-480-48.png    1x,
-            ./images/header/logo-tab-480-48@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ./images/header/logo-mob40.png    1x,
-            ./images/header/logo-mob40@2x.png 2x
-          "
-        />
-        <img src="./images/header/logo-mob40.png" alt="logo" />
-      </picture>
-    </a>
-
-    <button class="modal__close" type="button">
-      <svg class="modal__cross" width="32" height="32">
-        <use href="./images/svg/sprite.svg#icon-close-modal"></use>
-      </svg>
-    </button>
-
-    <ul class="mobile-menu__list">
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Home</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">How it&#39;s made?</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Our products</a>
-      </li>
-      <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#">Contact</a>
-      </li>
-    </ul>
-
-    <button class="button" type="button" data-modal="1">
-      Buy now
-      <svg class="icon-arrow-right" width="12" height="12">
-        <use href="./images/svg/sprite.svg#icon-arrow-right-bold"></use>
-      </svg>
-    </button>
   </div>
 </header>

@@ -1,0 +1,245 @@
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+.hero {
+
+  .container {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url(../images/hero/dots-mob320.png);
+
+    @include mobile {
+      padding-top: 40px;
+      background-position: bottom right;
+      background-image: url(../images/hero/dots-480-330.png);
+    }
+
+    @include tablet {
+      padding-top: 14px;
+      background-position: bottom center;
+      background-image: url(../images/hero/dots-tab768.png);
+    }
+
+    @include desktop {
+      padding-top: 31px;
+      background-image: url(../images/hero/dots-desk1200.png);
+    }
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.hero__left-block {
+  padding-top: 0;
+
+  @include mobile {
+    padding-top: 0;
+  }
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+  @include desktop {
+    padding-top: 14px;
+  }
+}
+
+.hero__title {
+  width: 247px;
+  margin-bottom: 32px;
+  font-family: $secondaryFontFamily;
+  @include fonts(26px, 400, 1.26, 0.04em);
+  color: $primaryTextColor;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+
+  @include desktop {
+    width: 367px;
+    margin-bottom: 28px;
+    @include fonts(38px, 400, 1.26, 0.04em);
+  }
+}
+
+.hero__title-passion {
+  @include fonts(34px, 400, 1.26, 0em);
+
+  @include desktop {
+    @include fonts(38px, 400, 1.26, 0.04em);
+  }
+}
+
+.hero__btn-list {
+  display: flex;
+
+  @include tablet {
+    margin-bottom: 12px;
+  }
+
+  @include desktop {
+    margin-bottom: 42px;
+  }
+}
+
+.hero__btn-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.hero__wrap-plate {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__plate {
+
+  @include tablet {
+    margin-right: 32px;
+  }
+
+  @include desktop {
+    margin-right: 16px;
+  }
+}
+
+.hero__wrap-info {
+
+
+  @include tablet {
+    width: 165px;
+    padding-top: 27px;
+  }
+
+  @include desktop {
+    width: 200px;
+    padding-top: 67px;
+  }
+}
+
+.hero__info {
+
+  @include tablet {
+    margin-bottom: 29px;
+    font-family: DM Sans, sans-serif;
+    @include fonts(12px, 400, 1.4, 0em);
+    color: #ffffff;
+    text-align: left;
+  }
+
+  @include desktop {
+    margin-bottom: 24px;
+    @include fonts(14px, 400, 1.4, 0em);
+  }
+}
+
+.hero__btn-reviews {
+
+  .icon-arrow {
+    fill: $primaryTextColor;
+    @include transition(transform);
+  }
+
+  &:hover .icon-arrow,
+  &:focus .icon-arrow {
+    transform: scale(1.2);
+  }
+}
+
+.hero__right-block {
+  position: relative;
+  display: flex;
+  padding-top: 19px;
+
+  @include mobile {
+    display: flex;
+    padding-top: 50px;
+  }
+
+  @include tablet {
+    display: flex;
+    padding-top: 6px;
+  }
+
+  @include desktop {
+    display: flex;
+    padding-top: 0;
+  }
+}
+
+.hero__ice-cream {
+  margin: 0 auto;
+
+  @include mobile {
+    position: relative;
+    right: 24px;
+  }
+
+  @include tablet {
+    position: static;
+  }
+
+  picture {
+    display: block;
+  }
+}
+
+.venue__list {
+  display: none;
+
+  @include tablet {
+    display: block;
+    padding-top: 14px;
+  }
+
+  @include desktop {
+    padding-top: 22px;
+  }
+}
+
+.venue__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 16px;
+  }
+}
+
+.venue__item {
+  text-align: right;
+}
+
+.venue__item-number {
+  margin-bottom: 4px;
+  color: $secondaryTextColor;
+  @include fonts(28px, 900, 1.22, 0.04em);
+  text-transform: uppercase;
+
+  @include desktop {
+    @include fonts(46px, 900, 1.22, 0.04em);
+  }
+}
+
+.venue__item-text {
+  @include fonts(8px, 400, 1.25, 0em);
+
+  @include desktop {
+    @include fonts(14px, 400, 1.21, 0em);
+  }
+}

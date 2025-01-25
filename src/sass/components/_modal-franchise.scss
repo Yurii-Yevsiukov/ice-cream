@@ -1,0 +1,23 @@
+/**
+  |============================
+  | Модальне вікно franchise
+  |============================
+*/
+
+.modal-franchise {
+
+  .modal__title {
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.modal__text--franchise {
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
