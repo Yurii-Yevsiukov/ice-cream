@@ -17,17 +17,17 @@
   @include centerFlex;
   width: 34px;
   height: 34px;
-  background-color: $bgColorButton;
-  color: $fillDefaultIcon;
   border-radius: 50%;
-  @include transition(color);
+  color: $fillDefaultIcon;
+  background-color: $bgColorButton;
 
-  &:hover,
-  &:focus {
-    color: $fillHoverIcon;
+  &:hover .socials-list__icon,
+  &:focus .socials-list__icon {
+    fill: $fillHoverIcon;
+    @include transition(fill);
   }
 }
 
 .socials-list__icon {
-  fill: currentColor;
+  fill: $fillDefaultIcon;
 }

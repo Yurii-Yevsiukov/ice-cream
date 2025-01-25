@@ -4,9 +4,7 @@
   |============================
 */
 .header {
-  margin: 0 auto;
   padding-top: 12px;
-  max-width: 480px;
 
   @include mobile {
     padding-top: 14px;
@@ -14,12 +12,10 @@
 
   @include tablet {
     padding-top: 20px;
-    max-width: 768px;
   }
 
   @include desktop {
     padding-top: 8px;
-    max-width: 1200px;
   }
 }
 
@@ -27,14 +23,6 @@
   display: flex;
   align-items: end;
   justify-content: space-between;
-
-  @include tablet {
-    justify-content: space-between;
-  }
-
-  @include desktop {
-    justify-content: space-between;
-  }
 }
 
 .logo {
@@ -42,11 +30,6 @@
   height: 37px;
 
   @include mobile {
-    width: 48px;
-    height: 44px;
-  }
-
-  @include tablet {
     width: 48px;
     height: 44px;
   }

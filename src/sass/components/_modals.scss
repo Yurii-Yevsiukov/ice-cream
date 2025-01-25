@@ -64,7 +64,6 @@
   margin-bottom: 20px;
   font-family: $secondaryFontFamily;
   @include fonts(16px, 400, 1.5, 0em);
-  color: $secondaryTextColor;
   text-align: center;
 
   @include tablet {
