@@ -74,14 +74,26 @@
 
 .advantages__item-cow::before {
   background-image: url(../images/advantages/cow-icon36.png);
+
+  @include retina {
+    background-image: url(../images/advantages/cow-icon36@2x.png);
+  }
 }
 
 .advantages__item-weight::before {
   background-image: url(../images/advantages/weight-icon36.png);
+
+  @include retina {
+    background-image: url(../images/advantages/weight-icon36@2x.png);
+  }
 }
 
 .advantages__item-cream::before {
   background-image: url(../images/advantages/ice-cream-icon36.png);
+
+  @include retina {
+    background-image: url(../images/advantages/ice-cream-icon36@2x.png);
+  }
 }
 
 .advantages__number {

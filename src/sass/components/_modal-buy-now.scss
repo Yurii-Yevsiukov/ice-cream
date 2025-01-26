@@ -126,12 +126,24 @@
 
 .name-product__product--icecream::after {
   background-image: url(../images/modals/modal-ice-cream132.png);
+
+  @include retina {
+    background-image: url(../images/modals/modal-ice-cream132@2x.png);
+  }
 }
 
 .name-product__product--icecoffee::after {
   background-image: url(../images/modals/modal-ice-coffee132.png);
+
+  @include retina {
+    background-image: url(../images/modals/modal-ice-coffee132@2x.png);
+  }
 }
 
 .name-product__product--milkshake::after {
   background-image: url(../images/modals/modal-milkshekes132.png);
+
+  @include retina {
+    background-image: url(../images/modals/modal-milkshekes132@2x.png);
+  }
 }

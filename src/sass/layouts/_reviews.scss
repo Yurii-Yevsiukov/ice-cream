@@ -10,6 +10,10 @@
   background-color: $backgroundColorModal;
   background-image: url(../images/background/bg-mob885.png);
 
+  @include retina {
+    background-image: url(../images/background/bg-mob885@2x.png);
+  }
+
   @include mobile {
     padding-top: 235px;
     padding-bottom: 409px;
@@ -19,12 +23,20 @@
     padding-top: 283px;
     padding-bottom: 379px;
     background-image: url(../images/background/bg-tab963.png);
+
+    @include retina {
+      background-image: url(../images/background/bg-tab963@2x.png);
+    }
   }
 
   @include desktop {
     padding-top: 464px;
     padding-bottom: 228px;
     background-image: url(../images/background/bg-desk1300.png);
+
+    @include retina {
+      background-image: url(../images/background/bg-desk1300@2x.png);
+    }
   }
 }
 

@@ -10,12 +10,24 @@
   background-color: $backgroundColorModal;
   background-image: url(../images/background/bg-mob885.png);
 
+  @include retina {
+    background-image: url(../images/background/bg-mob885@2x.png);
+  }
+
   @include tablet {
     background-image: url(../images/background/bg-tab963.png);
+
+    @include retina {
+      background-image: url(../images/background/bg-tab963@2x.png);
+    }
   }
 
   @include desktop {
     background-image: url(../images/background/bg-desk1300.png);
+
+    @include retina {
+      background-image: url(../images/background/bg-desk1300@2x.png);
+    }
   }
 }
 
@@ -154,8 +166,16 @@
     background-repeat: no-repeat;
     background-image: url(../images/products/ice-cream-tab-mob200.png);
 
+    @include retina {
+      background-image: url(../images/products/ice-cream-tab-mob200@2x.png);
+    }
+
     @include desktop {
       background-image: url(../images/products/ice-cream-desk302.png);
+
+      @include retina {
+        background-image: url(../images/products/ice-cream-desk302@2x.png);
+      }
     }
   }
 }
@@ -172,8 +192,16 @@
     background-repeat: no-repeat;
     background-image: url(../images/products/ice-coffee-tab-mob200.png);
 
+    @include retina {
+      background-image: url(../images/products/ice-coffee-tab-mob200@2x.png);
+    }
+
     @include desktop {
       background-image: url(../images/products/ice-coffee-desk302.png);
+
+      @include retina {
+        background-image: url(../images/products/ice-coffee-desk302@2x.png);
+      }
     }
   }
 }
@@ -190,8 +218,16 @@
     background-repeat: no-repeat;
     background-image: url(../images/products/milkshekes-tab-mob200.png);
 
+    @include retina {
+      background-image: url(../images/products/milkshekes-tab-mob200@2x.png);
+    }
+
     @include desktop {
       background-image: url(../images/products/milkshekes-desk302.png);
+
+      @include retina {
+        background-image: url(../images/products/milkshekes-desk302@2x.png);
+      }
     }
   }
 }
