@@ -20,6 +20,15 @@
   border-radius: 50%;
   color: $fillDefaultIcon;
   background-color: $bgColorButton;
+  animation-name: gelatine;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+
+  &:hover,
+  &:focus {
+    animation: none;
+  }
 
   &:hover .socials-list__icon,
   &:focus .socials-list__icon {

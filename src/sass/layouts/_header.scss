@@ -29,6 +29,14 @@
   width: 40px;
   height: 37px;
 
+  &:hover,
+  &:focus {
+    animation-name: shake-horizontal;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+
   @include mobile {
     width: 48px;
     height: 44px;
@@ -95,6 +103,15 @@
 
 .header__btn-buynow {
   display: none;
+  animation-name: pulse-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  &:hover,
+  &:focus {
+    animation: none;
+  }
 
   @include tablet {
     display: inline-block;

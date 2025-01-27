@@ -65,6 +65,11 @@
 .footer__slogan-two {
   @include fonts(34px, 700, 1.21, 0.04em);
   text-transform: uppercase;
+  color: magenta;
+  animation-name: glow;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
   @include tablet {
     @include fonts(48px, 700, 1.23, 0.06em);

@@ -116,6 +116,10 @@
 }
 
 .hero__plate {
+  animation-name: spin;
+  animation-duration: 45s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
   @include tablet {
     margin-right: 32px;
