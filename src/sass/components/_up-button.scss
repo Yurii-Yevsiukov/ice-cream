@@ -3,40 +3,40 @@
   | Кнопка Вгору
   |============================
 */
-
-// чорновик
-.up {
+.button-scroll {
   position: fixed;
   right: 15px;
   bottom: 20px;
   z-index: 10;
+  width: 40px;
+  height: 40px;
+  @include centerFlex;
+  background-color: transparent;
+  border: none;
+  display: none;
 
   @include tablet {
     right: 30px;
-    bottom: 60px;
-  }
-
-  button {
+    bottom: 40px;
     width: 48px;
     height: 48px;
-    @include centerFlex;
-    background-color: transparent;
-    border: none;
+  }
 
-    @include tablet {
-      width: 64px;
-      height: 64px;
-    }
+  @include desktop {
+    right: 50px;
+    bottom: 60px;
+    width: 64px;
+    height: 64px;
+  }
+}
 
-    svg {
-      fill: #000000;
-      opacity: 0.4;
-      @include transition(opacity);
+.scroll-btn {
+  fill: #000000;
+  opacity: 0.4;
+  @include transition(opacity);
 
-      &:hover,
-      &:focus {
-        opacity: 1;
-      }
-    }
+  &:hover,
+  &:focus {
+    opacity: 1;
   }
 }

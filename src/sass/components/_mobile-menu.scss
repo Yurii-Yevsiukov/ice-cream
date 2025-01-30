@@ -13,12 +13,14 @@
   z-index: 50;
   text-align: center;
   background-color: $backgroundColorBody;
+  pointer-events: none;
   @include transition(transform);
 }
 
 .mobile-menu.is-open {
   transform: translateX(0);
   z-index: 100;
+  pointer-events: auto;
 }
 
 .mobile-menu__container {
